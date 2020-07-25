@@ -1,0 +1,41 @@
+.back {
+  width: 450px;
+  height: 334px;
+  background-color: black;
+  border-radius: 25px;
+  opacity: 0.9;
+  background-image: url("https://t3.ftcdn.net/jpg/02/53/98/62/240_F_253986268_I3wMfXKQvcjNVcRSLDTMfKtkvbmpAj1J.jpg");
+  background-size: 450px 200px;
+  background-repeat: no-repeat;
+  background-position: center;
+  max-height: 400px;
+  overflow-y: hidden;
+}
+
+.start {
+  background-image: url("https://image.freepik.com/free-photo/background-pattern-printed-question-marks_124595-127.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapp {
+  width: 100%;
+  height: 600px;
+  background-image: url("https://www.vertical-leap.uk/wp-content/uploads/2019/04/question-mark-rip-1400x800.jpg");
+}
+
+.bg-light-green {
+  background-color: #32cd32;
+}
+
+.monospace {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.Line {
+  width: 100px;
+  height: 10px;
+  background-color: red;
+  align-items: center;
+}
