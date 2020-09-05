@@ -67,7 +67,6 @@ const Shuffle = (props) => {
     } else {
       setPause((prev) => !prev);
       if (count < props.modified.length - 1) {
-        //console.log(props.modified[count + 1].correct_answer);
         setCount((prev) => prev + 1);
         setShuffled([
           ...shuffleArray(props.modified[count + 1].incorrect_answers),
@@ -116,7 +115,7 @@ const Shuffle = (props) => {
             </h1>
             <div ref={buttonCss}>
               {shuffled.map((home, index) => (
-                <div>
+                <div key={home}>
                   <button
                     id={home}
                     className={color.colors[index]}

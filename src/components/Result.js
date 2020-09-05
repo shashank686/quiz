@@ -19,14 +19,22 @@ const feedback = (data) => {
 
 const Result = (props) => {
   return (
-    <div className="tc ma6 ">
+    <div>
       {!props.result ? (
-        <div>
-          <form className="ma4 pa6 shadow-2 ">
-            <p>{props.variable}</p>
-            <p className="green">Correct Answers :{props.correct} </p>
+        <div className="result">
+          <div className="tc">
+            <h1>{props.variable}</h1>
             {feedback(props.correct)}
-          </form>
+          </div>
+          <h1 className="green">Correct Answers</h1>
+          <div class="split-container ">
+            <div className="child-split tc pa2">
+              <h1>{props.correct}</h1>
+            </div>
+            <div className="child-split  tc pa2">
+              <h1>10</h1>
+            </div>
+          </div>
         </div>
       ) : (
         <Loading />

@@ -13,7 +13,7 @@ const Screen = (props) => {
     });
   });
   return (
-    <center ref={cent} className=" pa6 start">
+    <div ref={cent} className="start">
       <div className="back pa2 ma2 tc">
         <form className="pa3 ma4 ">
           <h1 className="f1 red">GK-Quiz</h1>
@@ -25,25 +25,9 @@ const Screen = (props) => {
           </button>
         </form>
       </div>
-    </center>
+    </div>
+    // </center>
   );
 };
 
 export default Screen;
-/*
-tc ma6 pa5 pl7 w-70 
-<article className="vh-100 dt w-100">
-      <div className="dtc v-mid tc ph3 ph4-l">
-        <form className="shadow-2 pa4">
-          <h1 className="f1">GK-Quiz</h1>
-          <button
-            className=" pa2 br-pill dim pointer grow hover "
-            onClick={() => props.onPress()}
-          >
-            Start Quiz
-          </button>
-        </form>
-      </div>
-    </article>
-
-*/

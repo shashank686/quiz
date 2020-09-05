@@ -27,7 +27,7 @@ const StartScreen = () => {
     getCorrect((prev) => prev + 1);
   };
   return (
-    <div className="tc">
+    <div>
       {questions.length !== 0 && result === true ? (
         <div className="wrapp">
           <Timer
